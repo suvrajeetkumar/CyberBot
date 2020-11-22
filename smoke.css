@@ -1,0 +1,43 @@
+
+#smoke1 span { 
+  display: block;
+	position: absolute;
+	
+	margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid grey;
+	border-radius: 35px;
+	bottom: 350px;
+	top: -50px;
+	left: 42%;
+	opacity: 0;
+	transform: scale(0.2);
+	
+
+}
+
+@keyframes smokeL {
+	0%   { transform: scale(0.4) translate(0, 0) }
+	10%  { opacity: .85; transform: scale(0.4) translate(0, -5px) }
+
+	100% { opacity: 0; transform: scale(1) translate(-30px, -170px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.4) translate(0, 0) }
+	10%  { opacity: 0.85; transform: scale(0.4) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(30px, -170px) }
+}
+
+
+
+ .ss0 { animation: smokeL 5s 5s 2 }
+ .ss1 { animation: smokeR 5s 5.5s 2 }
+ .ss2 { animation: smokeL 5s 6s 2 }
+ .ss3 { animation: smokeR 5s 6.5s 2 }
+ .ss4 { animation: smokeL 5s 7s 2 }
+ .ss5 { animation: smokeR 5s 7.5s 1 }
+ .ss6 { animation: smokeL 5s 8s 1 }
+ .ss7 { animation: smokeR 5s 8.5s 1 }
+ .ss8 { animation: smokeL 5s 9s 1 }
+ .ss9 { animation: smokeR 5s 9.5s 1 }

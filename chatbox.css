@@ -1,0 +1,29 @@
+.chatbox{
+	display: block;
+	height: auto;
+	width: 250px;
+	background-color: white;
+	position: absolute;
+	top: 10%;
+	right: 25%;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 20%;
+}
+.chatbox::before{
+	display: block;
+	content: "";
+	position: absolute;
+    top: 60%;
+    left: -7%;
+	height: 0px;
+	width: 0px;
+	transform: rotate(-20deg);
+	border-bottom: 50px solid white;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	z-index: -1;
+}
+#button2{
+	display: none;
+}

@@ -1,0 +1,1180 @@
+/*=======================BASIC STYLING OF HEAD AND BODY==================*/
+html,body{
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: #094c72;
+	height: 400%;
+	width: 400%;
+	box-shadow: inset 0 0 100px 0px #01293f; 
+}
+
+/*============================ STARS IN THE BACKGROUND ========================*/
+#sky{
+	height: 5px;
+	width: 5px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow:  500px 100px 0px 0.5px white,				/*STARS IN THE BACKGROUND */
+				600px 150px 0px 0.5px white,
+				 250px 300px 0px 0.5px white,
+				150px 500px 0px 0.5px white,					/*MADE WITH*/
+				450px 400px 0px 0.5px white,
+				600px 150px 0px 0.5px white,
+				 250px 300px 0px 0.5px white,
+				150px 500px 0px 0.5px white,
+				 1500px 100px 0px 0.5px white,				/*LOTS OF box-shadow */
+				1600px 150px 0px 0.5px white,
+				 1250px 300px 0px 0.5px white,
+				1150px 250px 0px 0.5px white,
+				1250px 400px 0px 0.5px white,
+				1400px 150px 0px 0.5px white,					/*BY OFFSETING THE REFERENCE */
+				 1150px 100px 0px 0.5px white,
+				950px 50px 0px 0.5px white,
+				1656px 150px 0px 0.5px white,
+				1600px 170px 0px 0.5px white,
+				 1699px 260px 0px 0.5px white,					/*DIV*/
+				1890px 90px 0px 0.5px white;
+}
+
+/*=======================BUTTON BOARD==========================*/
+
+#board{
+	box-sizing: border-box;
+	height: 260px;
+	width: 300px;
+	background-color: #0a0a0b;
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	z-index: -1;
+	color: white;
+	padding-left: 30px;
+	padding-top: 40px;
+	box-shadow: inset 0 0 0 10px #008077;
+}
+
+
+
+
+/*========================THE MAIN BOT=======================*/
+
+
+
+#whole1{
+transform: scale(1);
+position: absolute;
+top: 54%;
+left: 50%;
+}
+.whole1{
+	animation: whole1move 7s 2s  both;
+
+}
+#whole2{animation: whole 5s  both infinite;}
+#whole{position: absolute;
+	top: 50%;
+	left: 50%;
+	/*New*/
+	
+	/*Initially*/
+	/*animation: whole 7s infinite;*/
+	
+}
+.wholemove{
+	animation: wholemove 7.5s 1.5s both ;
+}
+
+body{
+	background-color: #f0932b00;
+}
+#body{
+	height: 200px;
+	width: 200px;
+/*	background-image: linear-gradient(to right, #000013,darkblue,blue,darkblue);*/
+	background-color: #0a0a0b;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 20px;
+	transform: translateY(-50%) translateX(-50%);
+	box-shadow: inset 0 0 0 5px lightblue;
+
+	/*box-shadow: 250px -250px 0px -20px lightblue;*/
+}
+.bodydes{
+	animation:  bodydes 1s 17.5s both ease-out;
+
+}
+
+
+#body::before{
+	content: "";
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background-color: #000000;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translateY(-50%) translateX(-50%);
+	box-shadow: -79px -73px 0 -38px #0def43,
+				0 0 0 10px #35ff4d,
+				-79px 73px 0 -38px #0def43,
+				79px 73px 0 -38px #0def43,
+				79px -73px 0 -38px #0def43;
+
+}
+#body::after{
+	content: "";
+	height: 10px;
+	width: 50px;
+	background-color: #03f3e0;
+	position: absolute;
+	top: 40%;
+	left:50%;
+	border-radius: 10px;
+	transform: translateY(-50%) translateX(-50%);
+	box-shadow: 0px 20px 0px 0px red,
+				0px 40px 0px 0px #03f3e0;
+	animation: screen 3s both infinite linear;
+
+}
+
+#petbut{
+	z-index: 0;
+	position: absolute;
+	top: 120px;
+	left: 30px;
+	background-color: #0def43;
+}
+#headbut{
+	z-index: 0;
+	background-color: #0def43;
+	position: absolute;
+	top: 160px;
+	left: 30px
+}
+#accidentbut{
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	background-color: #0def43;
+}
+#game{
+	position: absolute;
+	top: 240px;
+	left: 30px;
+	background-color: #0def43;
+}
+.chatbox_initial{
+	display: none;
+}
+#semi{
+	height: 20px;
+	width: 80px;
+	background-color: #3e2c2c;
+	border-radius: 40px 40px 0 0 ;
+	position: absolute;
+	top: -19px;
+    left: 59px;
+   /* box-shadow: 45px 353px 0 0 grey,
+    			-35px 353px 0 0 grey;*/
+
+}
+#semi::after{
+	content: "";
+	height: 20px;
+	width: 80px;
+	background-color: #3e2c2c;
+	border-radius: 40px 40px 0 0 ;
+	position: absolute;
+	    top: 60px;
+    left: 110px;
+    transform: rotateZ(90deg);
+}
+#semi::before{
+	content: "";
+	height: 20px;
+	width: 80px;
+	background-color: #3e2c2c;
+	border-radius: 40px 40px 0 0 ;
+	position: absolute;
+	    top: 60px;
+    left: -108px;
+    transform: rotateZ(-90deg);
+}
+#legp{}
+.legp{animation: legp both 2s 17.5s linear;}
+
+
+
+#leg{
+	height: 100px;
+	width: 40px;
+	background-color: lightblue;
+	position: absolute;
+	top: 72%;
+	left:47.6%;
+	border-radius: 10px;
+	transform: translateY(115%) translateX(-130%);
+	box-shadow: 70px 0px 0 0 lightblue,
+				0px -31px 0 -15px darkblue,
+				70px -31px 0 -15px darkblue,
+				70px 34px 0 -15px darkblue,
+				0px 34px 0 -15px darkblue;
+
+}
+.legdes{
+	animation: legdes 2s 17.5s both linear;
+
+}
+
+
+
+#leg::before{
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	border: 15px solid darkred;
+	box-shadow: 69px 0 0 -15px red,
+				69px 0 0 0px darkred;
+	}
+#leg::after{
+	content: "";
+	height: 20px;
+	width: 80px;
+	background-color: grey;
+	border-radius: 40px 40px 0 0 ;
+	position: absolute;
+	top: 118px;
+    left: 53px;
+    box-shadow: -76px 0 0 0 grey;
+	}
+#phead{
+	transform-origin: 180px 0px;
+}
+.movehead{
+	/*Animation1*/
+	animation: headopen linear both 7.75s 5s;
+	
+}
+
+#head{
+	height: 100px;
+	width: 100px;
+	background-image: linear-gradient(to right, #000013,darkblue,blue,darkblue);
+	border-radius: 100px 100px 0 0 ;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateY(-220%) translateX(-50%);
+	box-shadow: -40px 0 0 -20px,
+				40px 0 0 -20px,
+				0 -10px 0 0 #094c72,
+				0 10px 0 0 black,
+				0 -20px 0 0 black;
+	/*animation:*/ head 2s both 2 linear;
+
+}
+.headdes{
+	animation: headdes 1s 17.5s both linear;
+
+}
+
+.updown{
+	animation: head 2s both infinite linear;
+
+}
+.openhead{
+	/*Animation1*/
+	animation: head 2s both 2 linear;	
+}
+#headbefore{
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #0def43;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translateY(-50%) translateX(-50%);
+	box-shadow: 40px 0 0 0 #0def43,
+				0 0 0 10px #00703e,
+				40px 0 0 10px #00703e;
+}
+.eyecolour{
+	animation: eyecolour 1s 4s 10;
+
+}
+
+@keyframes eyecolour{
+	0%{
+		background-color: darkred;
+		box-shadow: 40px 0 0 0 darkred,
+				    0 0 0 10px brown,
+				    40px 0 0 10px brown;
+	
+	}
+	80%{
+		background-color: darkred;
+		box-shadow: 40px 0 0 0 darkred,
+				    0 0 0 10px brown,
+				    40px 0 0 10px brown;
+	}
+}
+#head:after{
+	content: "";
+	height: 5px;
+	width: 70px;
+	border-radius: 10%;
+	background-color: red;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	
+}
+
+
+#lefthand{
+	height: 75px;
+	width: 18px;
+	background-color: darkred;
+	position: absolute;
+    top: 44%;
+    border-radius: 20px 20px 0 0;
+    left: 41%;
+	transform: translateY(-100%) translateX(-790%) rotate(45deg);
+}
+.lefthanddes{
+	animation: lefthanddes 1.8s 17.5s both linear;
+
+}
+
+
+#lefthand::after{
+	content: "";
+	height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: darkred;
+    position: absolute;
+   top: 91%;
+    left: 38%;
+	transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+
+    box-shadow: inset 0 0 0 10px grey;
+
+
+}
+#leftarm{
+	
+	height: 100px;
+    width: 18px;
+    background-color: darkred;
+	position:absolute;
+     top: 158%;
+    left: 0%;
+	transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+	    transform: translateY(-32%) translateX(-248%) rotate(-45deg);
+
+	transform-origin: 10px -50px;
+
+}
+.leftarm{
+	/*Animation2*/
+
+	animation: armdog 4s 1.5s linear both ;
+}
+
+#righthand1{
+	height: 75px;
+	width: 18px;
+	background-color: darkred;
+	position: absolute;
+	border-radius: 20px 20px 0 0;
+	top: 39%;
+   
+    right:50%;
+    transform-origin: 0 0 ;
+	transform: translateX(670%) translateY(-80%) rotate(-45deg);
+
+}
+.righthandsave{
+	animation:righthandsave 3s 15.5s both linear;
+
+}
+.righthandtohead{
+	/*Animation1*/
+	animation: bicep 20s linear both;
+
+}
+
+
+#righthand1::after{
+	content: "";
+	height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: darkred;
+    position: absolute;
+   top: 91%;
+    left: 38%;
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    box-shadow: inset 0 0 0 10px grey;
+
+}
+#rightarm1{
+	height: 75px;
+	width: 18px;
+	background-color: darkred;
+	transform-origin: 0px 0px;
+	position: absolute;
+	top: 100%;
+    left: -39%;
+	transform: rotate(45deg);
+
+	
+}
+.rightarmsave{
+	animation: save 7s 9s both linear;					/*animaiton for saving the car*/
+
+}
+.rightarmtohead{
+
+	/*Animation1*/
+	animation: armhead 20s linear both ;
+}
+.rightarm1pet{
+	/*Animation2*/
+	animation: showpath 5s 3s linear both; 
+	
+}
+
+#rightarm1::after{
+	content: "";
+			    width: 50px;
+    height: 40px; /* as the half of the width */
+    background-color: transparent;
+  border-radius: 55px 55px 0 0 ;
+    border: 10px solid gray;
+    border-bottom: 0;
+position: absolute;
+left: -25px;
+top: 70px;
+}
+#leftarm::after{
+	content: "";
+		    width: 50px;
+    height: 40px; /* as the half of the width */
+    background-color: transparent;
+  border-radius: 55px 55px 0 0 ;
+    border: 10px solid gray;
+    border-bottom: 0;
+position: absolute;
+left: -25px;
+top: 90px;
+
+}
+
+}
+
+
+
+
+
+
+
+#boost1{
+	height: 30px;
+	width: 30px;
+	border-radius: 50px 0 ;
+	background-color: white;
+	transform: rotateZ(-45deg);
+	position: absolute;
+	animation: boost infinite 2s both;
+	top: 148px;
+    left: 5px;
+    z-index: -1;
+    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+}
+#boost_1{
+	height: 30px;
+	width: 30px;
+	border-radius: 50px 0 ;
+	background-color: white;
+	transform: rotateZ(_45deg);
+	position: absolute;
+	animation: boost11 infinite 2s both;
+	top: 148px;
+	left: 5px;
+	z-index: -1;
+	box-shadow: 0 0 10px 10px #00ffea,
+				0 0 10px #00ffea,
+				0 0 100px 20px #00ffea,
+				0 0 250px 60px #00ffea;
+}
+#boost_arm{
+	height: 30px;
+	width: 50px;
+	
+	background-color: white;
+	transform: rotate(0deg) translateY(-1370px);
+	position: absolute;
+	top: 67px;
+    left: 241px;
+	z-index: -1;
+	/*box-shadow: 0 0 10px 10px #00ffea,
+				0 0 10px #00ffea,
+				0 0 100px 20px #00ffea,
+				0 0 250px 60px #00ffea;*/
+}
+.boost_arm{
+	animation: boost_arm  2s 9.5s  3 both;
+
+}
+
+
+
+#boost2{
+	
+	height: 30px;
+	width: 30px;
+	border-radius: 50px 0 ;
+	background-color: white;
+	transform: rotateZ(-45deg);
+	animation: boost11 infinite 2s both;
+	position: absolute;
+	top: 152px;
+    left: 78px;
+    z-index: -1;
+    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+}
+
+
+/*================================ KEYFRAMES OF THE MAIN BOT ===================================*/
+
+@keyframes armdog{
+	0%{transform: rotate(-45deg) translateY(-50%) translateX(-50%);}
+	33%{transform: rotate(45deg) translateY(-50%) translateX(-50%);}
+	66%{transform: rotate(-30deg) translateY(-50%) translateX(-50%);}
+	80%{transform: rotate(-10deg) translateY(-50%) translateX(-50%);}
+	100%{transform: rotate(-45deg) translateY(-50%) translateX(-50%);}
+
+}
+
+@keyframes screen{
+	0%{background-color:#03f3e0;
+	   box-shadow: 0px 20px 0 0 red,
+	   			   0 40px 0 0 #03f3e0; }
+	32%{background-color:#03f3e0;
+	   box-shadow: 0px 20px 0 0 red,
+	   			   0 40px 0 0 #03f3e0;
+
+	}
+	33%{background-color: #03f3e0;
+		box-shadow: 0 20px 0 0 #03f3e0,
+					0 40px 0 0 red;}
+	65%{background-color: #03f3e0;
+		box-shadow: 0 20px 0 0 #03f3e0,
+					0 40px 0 0 red;}
+	66%{background-color: red;
+		box-shadow: 0 20px 0 0 #03f3e0,
+					0 40px 0 0 #03f3e0;}
+	100%{background-color: red;
+		box-shadow: 0 20px 0 0 #03f3e0,
+					0 40px 0 0 #03f3e0;}
+}
+
+@keyframes legp{
+	0%{transform: translateX(0);}
+	30%{transform: translateX(-1000px);}
+	90%{transform: translateX(-1000px);}
+	100%{transform: translateX(-1000px);transform:translateY(-1900px);}
+}
+
+
+@keyframes headopen{
+	0%{transform: rotate(0deg);}
+	40%{transform: rotate(65deg);}
+	60%{transform: rotate(65deg);}
+	100%{transform: rotate(0deg);}
+
+}
+
+@keyframes legdes{
+	0%{transform: translateY(115%) translateX(-130%) rotate(0deg);}
+	20%{transform: translateY(115%) translateX(-130%) rotate(-60deg);}
+	40%{transform: translateY(115%) translateX(-130%) rotate(30deg);}
+	100%{transform: translateY(115%) translateX(-130%) rotate(0deg);}
+}
+
+@keyframes bodydes{
+	0%{transform: translateY(-50%) translateX(-50%) rotate(0deg) ;}
+	/*30%{transform: translateY(-180%) translateX(-170%) rotate(180deg);}*/
+	100%{transform: translateY(-400%) translateX(-1200%) rotate(1000deg);}
+}
+
+@keyframes armhead{
+	0%{transform: rotate(45deg);}
+	8%{transform: rotate(0deg);}
+	20%{transform: rotate(-120deg);}
+	24%{transform: rotate(-118deg);}
+	24.2%{transform: rotate(-122deg);}
+	32%{transform: rotate(-60deg);}
+	40%{transform: rotate(0deg);}
+	48%{transform: rotate(0deg);}
+	55%{transform: rotate(-60deg);}
+	65%{transform: rotate(-122deg);}
+	70%{transform: rotate(-118deg);}
+	80%{transform: rotate(-120deg);}
+	85%{transform: rotate(0deg);}
+	
+
+}
+
+@keyframes headdes{
+	0%{transform: translateY(-220%) translateX(-50%) ;}
+	50%{transform: translateX(-580%) translateY(30%) rotate(460deg);}
+	100%{transform: translateX(-880%) translateY(1447%) rotate(850deg);}
+}
+
+@keyframes lefthanddes{
+	0%{transform: translateY(-100%) translateX(-790%) rotate(45deg) ;}
+	50%{transform: translateX(-3580%) translateY(30%) rotate(1260deg);}
+	100%{transform: translateX(-4080%) translateY(1447%) rotate(2450deg);}
+}
+
+@keyframes righthandsave{
+	0%{transform: translateX(570%) translateY(-80%) rotate(-45deg);}
+	33.3%{transform: translateX(570%) translateY(-80%) rotate(-180deg);}
+	66.6%{transform: translateX(570%) translateY(-80%) rotate(-180deg) ;}
+	/*75%{transform: translateX(-6580%) translateY(30%) rotate(460deg);}*/
+	100%{transform: translateX(-8080%) translateY(1447%) rotate(850deg);}
+}
+
+@keyframes save{
+	0%{transform: rotate(45deg); }
+	6%{transform: rotate(-45deg);}
+	94%{transform: rotate(-45deg);}
+	100%{transform: rotate(0deg);}
+}
+
+@keyframes righthanddes{
+	0%{transform: translateX(670%) translateY(-80%) rotate(-45deg) ;}
+	50%{transform: translateX(-6580%) translateY(30%) rotate(460deg);}
+	100%{transform: translateX(-8080%) translateY(1447%) rotate(850deg);}
+}
+@keyframes bicep{
+	0%{transform: translateX(670%) translateY(-80%) rotate(-45deg);}
+	20%{transform: translateX(670%) translateY(-80%) rotate(-130deg);}
+	80%{transform: translateX(670%) translateY(-80%) rotate(-130deg);}
+	100%{transform: translateX(670%) translateY(-80%) rotate(-45deg);}
+
+}
+
+@keyframes head{
+	0%{transform: translateY(-220px) translateX(-50%);}
+	33%{transform: translateY(-230px) translateX(-50%);}
+	66%{transform: translateY(-200px) translateX(-50%);}
+	100%{transform: translateY(-220px) translateX(-50%);}
+	
+}
+
+
+@keyframes showpath{
+	0%{transform: rotate(45deg);}
+	25%{transform: rotate(-45deg);}
+	60%{transform: rotate(-45deg);}
+	100%{transform: rotate(45deg);}
+}
+
+
+@keyframes boost_arm{
+	0%{height: 0px;
+		transform: rotateZ(-45deg);
+		/*border-radius: 50px 0 ;*/    
+		
+	}
+	1%{
+		height: 500px;
+		transform: rotateZ(-45deg);
+		/*border-radius: 50% 50%;*/
+		box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+	}
+	20%{
+			height: 500px;
+		transform: rotateZ(-45deg);
+		/*border-radius: 50% 50%;*/
+		    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+	}
+	40%{
+		height: 500px;
+		transform: rotateZ(-45deg);
+		/*border-radius: 50% 50%;*/
+		    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+	}
+	60%{
+		height: 550px;
+		transform: rotateZ(-45deg);
+		/*border-radius: 50% 50%;*/
+		    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+	}
+	99%{
+		height: 500px;
+		transform: rotateZ(-45deg);
+		/*border-radius: 50% 50%;*/
+		    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+	}
+	100%{
+		height: 0px;
+		transform: rotateZ(-45deg);
+		/*border-radius: 50px 0 ;*/
+		   /* box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;*/
+	}
+}
+
+@keyframes wholemove{
+	0%{transform: rotate(0);
+		transform-origin: 0 200px;}
+	16.6%{transform: rotate(45deg);
+	transform-origin: 0 200px;}
+	33.3%{transform: rotate(-45deg);
+	transform-origin: 0 200px;}
+	50%{transform: rotate(45deg);
+	transform-origin: 0 200px;}
+	66%{transform: rotate(-45deg);
+	transform-origin: 0 200px;}
+	83.33%{transform: rotate(45deg);
+	transform-origin: 0 200px;}
+	100%{{transform: rotate(0deg);
+	transform-origin: 0 200px;}}
+}
+@keyframes whole{
+	0%{transform: translateY(-20px) translateX(-50%) ;}
+	33%{transform: translateY(-40px) translateX(-50%);}
+	66%{transform: translateY(0px) translateX(-50%);}
+	100%{transform: translateY(-20px) translateX(-50%) ;}
+	
+}
+
+@keyframes boost{
+	0%{transform: rotateZ(-45deg) scale(1);}
+	50%{transform: rotateZ(-45deg) scale(0.7);}
+	100%{transform: rotateZ(-45deg) scale(1);}
+}
+
+
+/*====================================== END OF KEYFRAMES OF THE MAIN BOT ======================================*/
+
+
+#boost_1d{
+	height: 30px;
+	width: 30px;
+	border-radius: 50px 0 ;
+	background-color: white;
+	
+	position: absolute;
+	animation: boost11  2s 0s infinite both;
+    top: 84px;
+    left: 56px;
+	z-index: -1;
+	box-shadow: 0 0 10px 10px #00ffea,
+				0 0 10px #00ffea,
+				0 0 100px 20px #00ffea,
+				0 0 250px 60px #00ffea;
+}
+#boost2d{
+	
+	height: 30px;
+	width: 30px;
+	border-radius: 50px 0 ;
+	background-color: white;
+	transform: rotateZ(-45deg);
+	animation: boost11 infinite 2s 0s both;
+	position: absolute;
+	top: 84px;
+    left: 118px;
+    z-index: -1;
+    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+}
+
+@keyframes boost11{
+	0%{height: 30px;
+		transform: rotateZ(-45deg);
+		border-radius: 50px 0 ;
+	}
+	1%{
+		height: 300px;
+		transform: rotateZ(0);
+		border-radius: 50% 50%;
+	}
+	20%{
+			height: 300px;
+		transform: rotateZ(0);
+		border-radius: 50% 50%;
+	}
+	40%{
+		height: 100px;
+		transform: rotateZ(0);
+		border-radius: 50% 50%;
+	}
+	99%{
+		height: 200px;
+		transform: rotateZ(0);
+
+		border-radius: 50% 50%;
+	}
+	100%{
+		height: 30px;
+		transform: rotateZ(-45deg);
+		border-radius: 50px 0 ;
+	}
+}
+
+.*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.head{ position: absolute;
+	top:-50px;
+
+	height: 60px;
+	width:70px;
+	z-index: 1;
+	animation-name: head;
+
+}
+@keyframes po{
+	0%{
+		transform: translateX(-400px) rotateY(180deg);
+	}
+	10%{
+		transform: translateX(150%) rotateY(180deg);
+	}
+	40%{
+		transform: translateX(150%) rotateY(180deg);
+	}
+	100%{
+		transform: translateX(1500%) rotateY(180deg);
+	}
+}
+#pos{
+	position: absolute;
+	top:70%;
+	left:10%;
+	width: 170px;
+	height: 140px;
+	transform: translate(-250% ,0%) rotateY(180deg);
+	/*animation: po 15s both linear;*/
+
+	
+}
+.face{position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 0 0 0 50px ;
+	background-color:#fbbf65;	
+}
+.eye{
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top:10px;
+	left:25px;
+	/*box-shadow: 0 0 0 10px darkred;*/
+}
+.nose{
+	height: 8px;
+	width:8px;
+	border-radius: 50%;
+	background: black;
+	position: relative;
+	top:-4%;
+	left:-4%;
+}
+#ground{
+	z-index: -1;
+	height: 0;
+	width: 30px;
+	position: absolute;
+	top: 50px;
+	left: 45px;
+	border-bottom: 25px solid #3e2c2c;
+	border-left: 60px solid transparent;
+	border-right: 10px solid transparent;
+	width: 4500px; border-bottom: 2000px solid #3e2c2c;
+	border-left: 200px solid transparent;
+	top: 450px;
+}
+a{
+	text-decoration: none;
+	color: white
+}
+p{
+	position: absolute;
+	top: 125px;
+    left: -38px;
+}
+#sign{
+	height: 0px;
+	width: 0px;
+	background-color: transparent;
+	color: gold;
+	border-bottom: 200px solid red;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	font-size: 22px;
+	font-family: helvetica;
+	padding-top: 70px;
+	text-align: center;
+	position: absolute;
+    top: -345px;
+    left: -91px;
+    transform: scale(0.5);
+    transform-origin: 100px 350px;
+}
+.sign{
+
+    animation: signdes 0.3s 17.6s both;
+}
+@keyframes signdes{
+	from{transform: rotate(0) scale(0.5);}
+	to{transform: rotate(-45deg) scale(0.5);}
+}
+#sign::before{
+	content: "";
+	height: 0px;
+	width: 0px;
+	background-color: transparent;
+	color: white;
+	border-bottom: 200px solid darkred;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	font-size: 22px;
+	    transform: scale(0.8);
+    position: absolute;
+    left: -100px;
+    top: 76px;
+	z-index: -1;
+	}
+
+#sign::after{
+	content: "";
+    height: 73px;
+    width: 25px;
+    position: absolute;
+    left: -15px;
+    top: 268px;
+	background-color: brown;
+}
+#exaust{
+	height: 0;
+	width: 30px;
+	position: absolute;
+	top: 50px;
+	left: 45px;
+	border-bottom: 25px solid #3e2c2c;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+}
+#exaust2{
+	height: 0;
+	width: 30px;
+	position: absolute;
+	top: 50px;
+	left: 105px;
+	border-bottom: 25px solid #3e2c2c;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+}
+
+.ear{position: absolute;
+	height: 60px;
+	width: 20px;
+	border-radius: 0 0 10px 10px;
+	background-color: brown;
+	position: relative;
+	left: 50px;
+	z-index: 1;
+	
+	
+}
+.body{
+	 position: absolute;
+	
+}
+
+.main{height: 55px;
+	width: 100px;
+	border-radius: 20px 0 0 20px;
+	background-color: #fbbf65;
+	position: absolute;
+	left: 45px;
+	top:-23px;
+	
+}
+
+.legs{
+	height: 40px;
+	width: 10px;
+	background-color:#fbbf65 
+}
+.p1{
+	position: absolute;
+	left: 60px;
+	top:20px;
+	}
+.p2{
+	position: absolute;
+	left: 75px;
+	top:20px;
+
+	}
+.p3{
+	position: absolute;
+	left: 120px;
+	top:20px;
+	}
+.p4{
+	position: absolute;
+	left: 135px;
+	top:20px;
+	}
+.tail{background-color:#fbbf65;
+	width: 30px;
+	height: 40px;
+	clip-path: polygon(100% 0,0% 100%,0 70%);
+	position: absolute;
+	left: 140px;
+	top:-50px;
+	transform-origin: 0px 30px;
+	animation-name: tail;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+}
+/*@keyframes head {
+	0%{transform:rotateZ(0deg)}
+	25%{transform:rotateZ(10deg)}
+	75%{transform:rotateZ(-40deg)}
+	100%{transform:rotateZ(0deg)}
+}*/
+@keyframes tail {
+	0%{transform:rotateZ(0deg)}
+	25%{transform:rotateZ(60deg)}
+	75%{transform:rotateZ(-60deg)}
+	100%{transform:rotateZ(0deg)}
+}
+
+#boost_1d{
+	height: 30px;
+	width: 30px;
+	border-radius: 50px 0 ;
+	background-color: white;
+	
+	position: absolute;
+	/*animation: boost11  2s 0s infinite both;*/
+    top: 84px;
+    left: 56px;
+	z-index: -1;
+	box-shadow: 0 0 10px 10px #00ffea,
+				0 0 10px #00ffea,
+				0 0 100px 20px #00ffea,
+				0 0 250px 60px #00ffea;
+}
+#boost2d{
+	
+	height: 30px;
+	width: 30px;
+	border-radius: 50px 0 ;
+	background-color: white;
+	transform: rotateZ(-45deg);
+	/*animation: boost11 infinite 2s 0s both;*/
+	position: absolute;
+	top: 84px;
+    left: 118px;
+    z-index: -1;
+    box-shadow:   0px 0px 10px 10px #00ffea,
+    			 0 0 10px #00ffea,
+    			 0 0 100px  20px #00ffea,
+    			 0 0 250px  60px #00ffea;
+}
+
+
+@keyframes whole1move{
+	0%{transform: translateX(0px)scale(1);}
+	20%{transform: translateX(400px)scale(0.7);}
+	40%{transform: translateX(-400px)scale(0.6);}
+	60%{transform: translateX(400px)scale(0.5);}
+	80%{transform: translateX(-400px)scale(0.5);}
+	100%{transform: translateX(0px) scale(0.4);}
+/*	62.5%{transform: translateX(0px);}
+	75%{transform: translateX(0px);}
+	87.5%{transform: translateX(0px);}
+	100%{transform: translateX(0px);}
+}*/
+
+
+.backgd{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
+
+
+		/*<<====================background======================>>*/
+
+.backgd{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
+
+#board{
+	height: 400px;
+	width: 300px;
+	background-color: black;
+}
+

@@ -1,0 +1,303 @@
+#exaust{
+	height: 0;
+	width: 30px;
+	position: absolute;
+	top: 50px;
+	left: 45px;
+	border-bottom: 25px solid #3e2c2c;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+}
+.helper{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #8a8a5ee3;
+	opacity: .8;
+	
+}
+/*.carbody{
+	position: absolute;
+	height: 150px;
+	top: 130px;
+	width: 500px;
+	background-color: #2c4b80;
+	left: 90px;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 40%;
+}*/
+
+/*.extra{
+	position: absolute;
+	height:100px;
+	width: 250px;
+	background-color: #094c72;
+	left: 380px;
+	top: 20px;
+	transform: rotate(70deg);
+}
+
+.extra1{
+	position: absolute;
+	height:120px;
+	width: 270px;
+	background-color: #094c72;
+	left: -120px;
+	top: 20px;
+	transform: rotate(-60deg);
+}*/
+
+.low_body{
+	position: absolute;
+	height: 150px;
+	width: 700px;
+	top: 280px;
+	background-color: #2c4b80;
+	border-top-right-radius: 20%;
+	border-top-left-radius: 20%;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius: 7%;
+}
+
+.headlight{
+	position: absolute;
+	height: 50px;
+	width: 80px;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	background-color: yellow;
+	top: 6px;
+}
+
+.wheel1{
+	position: absolute;
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	background-color: black;
+	top: 45px;
+	left: 80px;
+}
+
+.wheel2{
+	position: absolute;
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	background-color: black;
+	top: 45px;
+	left: 450px;
+}
+#wheel1_inside{
+	position: absolute;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	background-color: white;
+	top: 10px;
+	left: 10px;
+
+} 
+.stick1{    
+ position: absolute;
+     height: 120px;   
+       width: 4px;
+background-color: black; 
+    left: 45%; 
+    } 
+
+    #stick2{    
+ position: absolute;
+     height: 120px;   
+       width: 4px;
+background-color: black; 
+    left: 48.5%;
+    transform: rotate(90deg); 
+    }
+@keyframes rotate{
+	0%{ transform: rotate(0deg) }
+	50%{ transform: rotate(-180deg) }
+	97%{ transform: rotate(-380deg) }
+}
+#wheel1_inside {  }
+.wheel_inside{
+	animation: rotate 0.5s 36;
+}
+#wheel2_inside {}
+#wheel2_inside{ 
+        position:absolute;
+             height: 120px;
+                  width: 120px;
+                       border-radius: 50%;
+	background-color: white; 	
+    top: 10px;
+         left: 10px;
+	
+}
+
+
+
+
+.window1{
+	height: 0px;
+	width: 300px;
+	border-bottom: 140px solid #9e9ec4;
+	border-left: 80px solid transparent;
+	border-right: 70px solid transparent;
+	
+	position: absolute;
+	    left: 187px;
+    top: 145px;
+}
+.edit{
+    height: 165px;
+    width: 20px;
+    top: -13px;
+    left: -41px;
+	position: absolute;
+	background-color: #2c4b80;
+	transform: rotate(30deg);
+}
+.edit_more{
+	    height: 154px;
+    width: 25px;
+    top: -6px;
+    left: 326px;
+	position: absolute;
+	background-color:#2c4b80;
+	transform: rotate(-20deg);
+}
+
+.edit123{
+	height: 140px;
+	width: 20px;
+    top: -5px;
+    left: 150px;
+	position: absolute;
+	background-color: #2c4b80;
+}
+.edit123::before{
+	content: "";
+    height: 302px;
+    width: 20px;
+    top: -136px;
+    left: 3px;
+	position: absolute;
+	transform: rotate(90deg);
+	background-color: #2c4b80;	
+}
+.edit12{
+	height: 140px;
+	width: 20px;
+	top: -15px;
+	left: 340px;
+	position: absolute;
+	background-color: #2c4b80;
+}
+
+
+.door_handle_l{
+	height: 13px;
+	width: 30px;
+	position: absolute;
+	background-color: black;
+	top: 290px;
+	left: 290px;
+}
+.door_handle_r{
+	height: 13px;
+	width: 30px;
+	position: absolute;
+	background-color: black;
+	top: 290px;
+	left: 460px;
+}
+.exhaust{
+	height: 15px;
+	width: 20px;
+	position: absolute;
+	background-color: grey;
+	top: 120px;
+	left: 700px;
+}
+#car{
+	visibility: hidden;
+	position: absolute;
+	left: 250px;
+	top: 322px;
+	transform: translate(1500px,8px) scale(.3);
+/*	transform: translate(850px,8px) rotate(0deg) scale(.3) ; visibility: visible;*/
+}
+.car{
+	animation: run 18s 0s 1 linear both;
+	
+
+}
+
+@keyframes run{
+	0%{transform: translate(1200px,8px) scale(.3) ; visibility: visible;}
+	50%{transform: translate(850px,8px) rotate(0deg) scale(.3) ; visibility: visible;}
+	94%{transform: translate(850px,8px) rotate(-10deg) scale(.3) ; visibility: visible;}
+	96%{transform: translate(850px,8px) rotate(0deg) scale(.3) ; visibility: visible;}
+	98%{opacity: 1 ; transform: translate(00px,8px) rotate(0deg) scale(.3) ; visibility: visible;}
+	100%{opacity: 1; visibility: visible;}
+}
+
+@keyframes accident{
+	0%{ opacity: 0 ;transform: rotate(270deg);}
+	69%{ opacity: 0 ;transform: rotate(270deg) }
+	75%{ opacity: 1 }
+	90%{ opacity: 1 ;transform: rotate(300deg)}
+	
+}
+/*Ball Drop*/
+#ball {
+
+	z-index: 10	00;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  left:525px;
+  border-radius: 50%;
+  transform: translateY(-400px);
+  position: relative;
+  background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+
+
+}
+.ball{
+  animation: balldrop 25s 14s 1 both;
+
+}
+#txt{
+	position: absolute;
+	top: 0px;
+	    left: 0px;
+    font-weight: 800;
+    color: white;
+}
+a{position: absolute;
+	top: 27px;
+	    left: 7px;
+    font-weight: 800;
+    color: white;}
+@keyframes balldrop{
+	0%{transform: translate(0px,-400px);}
+	50%{transform: translate(0px,-100px);}
+	100%{transform: translate(0px,-100px);}
+}
+.ball:before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+  filter: blur(5px);
+  z-index: 2;
+}

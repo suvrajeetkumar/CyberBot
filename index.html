@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript" src="buttonEnable.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="smoke.css">
+<link rel="stylesheet" type="text/css" href="dog.css">
+<link rel="stylesheet" type="text/css" href="car.css">
+<link rel="stylesheet" type="text/css" href="chatbox.css">
+</head>
+<body>
+<div id="sky"></div>
+<!-- ================================ THE LEFT SIDE BUTTON GROUP ============================= -->
+
+	<div id="board">
+			ANIMATE THE BOT =>
+	</div>
+	<button id="petbut" onclick="pet()">PET A DOG</button>
+	<button id="headbut" onclick="openhead()">OPEN HEAD</button>
+	<button id="accidentbut" onclick="accident()">SAVE ACCIDENT</button>
+	<button id="game" onclick="game()">PLAY A GAME</button>
+	<br>
+	<br>
+	<br><div id="ground">
+	<div id="sign"><p>NO ROAD AHEAD</p></div>	
+	<div id="ball"><a href="http://www.tecnoesis.org/modules/cyberwarp/" target="_blank"><p id="txt">CYBERBOT</p></a></div>
+</div>
+
+<!-- ==================================== THE CHAT BOX ================================ -->
+
+<div class="chatbox_initial">
+	<div id="data">
+	Enter Your Name :
+	</div>
+	<br>
+		<input id="name" type="text" required="">
+		<button id="finish" onclick="finish()" style="display: none;">FINISH</button>
+		<input type="number" id="number" required="" style="display: none;">
+		<button id="button" onclick="speak()">Enter</button>
+		<button id="button2" onclick="music()" >START</button>
+		<button id="next" onclick="next()" style="display: none;" >Next</button>
+		<audio id="music" style="display: none;" controls >
+			<source src="name.wav" type="audio/wav">
+		</audio>
+</div>
+
+<!-- ============================= THE MAIN BOT ================================== -->
+<div id="whole1">
+<div id="whole2">
+<div id="whole">
+<div id="body">
+		<div id="smoke1">
+	  <span id="ss0"></span>					<!-- THE  -->
+	  <span id="ss1"></span>						
+	  <span id="ss2"></span>
+	  <span id="ss3"></span>					<!-- 	SMOKE -->
+	  <span id="ss4"></span>
+	  <span id="ss5"></span>
+	  <span id="ss6"></span>
+	  <span id="ss7"></span>					<!-- 			EFFECT -->
+	  <span id="ss8"></span>
+	  <span id="ss9"></span>
+	</div>
+	<div id="semi"></div>
+</div>
+<div id="legp">
+<div id="leg">
+<div id="boost1"></div>
+<div id="boost_1"></div>
+<div id="boost2"></div>
+</div>
+</div>
+<div id="phead"><div id="head" class="updown"><div id="headbefore"></div></div></div>
+<div id="lefthand">
+	<div id="leftarm"></div>
+</div>
+<div id="righthand1">
+	<div id="rightarm1"></div>
+	<div id="boost_arm"></div>
+</div>
+</div>
+</div>
+</div>
+<audio id="headsound" style="display: none;">
+	<source src="head.wav" type="audio/wav">
+</audio>
+
+<!-- ========================== THE DOG BOT ============================= -->
+
+<div id="pos">
+		<div class="body">
+			<div class="main"></div>
+			<div class="legs p1"></div>
+			<div class="legs p2"></div>
+			<div class="legs p3"></div>
+			<div class="legs p4"></div>
+			<div id="exaust"></div>
+			<div id="exaust2"></div>
+
+			<div id="boost_1d"></div>
+			<div id="boost2d"></div>
+			<div id="tail"></div>
+		</div>
+
+		<div class="head">
+			<div class="face">
+				<div class="eye"></div>
+				<div class="nose"></div>
+			</div>
+			<div class="ear"></div>
+		</div>
+<audio id="lovedog" style="display: none;" controls>
+	<source src="dogs.wav" type="audio/wav">
+</audio>
+</div>
+
+<!-- ========================================== THE CAR ================================== -->
+
+
+<audio id="carcrash" style="display: none;" controls>
+	<source src="accident.wav" type="audio/wav">
+</audio>
+<div id="car" style="transform: scale(.3);"> 
+  <div class="carbody">
+    <div class="window1">
+      <div class="edit"></div>
+      <div class="edit123"></div>
+      
+      <div class="edit_more"></div>
+    </div>
+    
+    <div class="extra"></div>
+    <div class="extra1"></div>
+  </div>
+  <div class="low_body">
+
+    <div class="headlight"> 
+    </div>
+
+    <div class="wheel1">
+      <div id="wheel1_inside">
+        <div class="stick1"></div>
+        <div id="stick2"></div>
+      </div>
+    </div>
+    <div class="wheel2">
+      <div id="wheel2_inside">
+        <div class="stick1"></div>
+        <div id="stick2"></div>
+      </div>
+    </div>
+    <div class="exhaust">
+      
+
+    </div>
+  </div>
+      <div class="door_handle_l"></div>
+      <div class="door_handle_r"></div>
+</div>
+</body>
+</html>
